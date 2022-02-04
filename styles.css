@@ -115,7 +115,7 @@ footer {
 }
 .tech-element {
   background-color: var(--bs-yellow);
-  color: black;
+  color: #333c6c;
   position: relative;
   border-radius: 10px;
 }
@@ -132,4 +132,45 @@ footer {
 }
 .row-wrapper > * {
   margin: 80px 0;
+}
+#request-callback {
+  background-color: var(--bs-gray-dark);
+  color: white;
+  margin-bottom: 50px;
+}
+.form-row-wrapper {
+  padding: 50px 0;
+}
+.form-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.form-text {
+  color: white;
+  height: fit-content;
+}
+.input-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 20px 10px;
+}
+.input-element label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.input-element input,
+.input-element select,
+.input-element select option {
+  padding: 14px 20px;
+}
+
+.callback-submit {
+  padding: 15px 20px;
+  background-color: var(--bs-primary);
+  color: #333c6c;
+  border: none;
+  font-weight: bold;
 }
