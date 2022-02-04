@@ -2,7 +2,7 @@
 
 :root {
   --bs-primary: #fab700;
-  --bs-primary-rgb: rgb(250, 183, 0);
+  --bs-primary-rgb: 250, 183, 0;
   --bs-gray-dark: #4d4d4d;
 }
 
@@ -43,4 +43,36 @@
   font-size: 38px;
   font-weight: 700;
   letter-spacing: -0.06em;
+}
+
+.footer-logo {
+  max-width: 250px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.socials a i {
+  font-size: 25px;
+  color: var(--bs-gray-dark);
+  margin-right: 10px;
+}
+
+.footer-column-wrapper > * {
+  margin: 30px 0;
+}
+
+.footer-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid;
+}
+.footer-header h4 {
+  font-size: 26px;
+  margin-left: 5px;
 }
