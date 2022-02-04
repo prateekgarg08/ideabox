@@ -6,6 +6,8 @@
   --bs-gray-dark: #4d4d4d;
   --bs-dark-blue: #333c6c;
   --bs-dark-blue-rgb: 51, 60, 108;
+  --bs-yellow: #fabc4d;
+  --bs-yellow-rgb: 250, 188, 77;
 }
 
 .text-gray-dark {
@@ -106,4 +108,28 @@ footer {
   font-size: 38px;
   font-weight: 700;
   color: #4d4d4d;
+}
+.tech-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.tech-element {
+  background-color: var(--bs-yellow);
+  color: black;
+  position: relative;
+  border-radius: 10px;
+}
+.tech-element p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.tech-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 50px;
+}
+.row-wrapper > * {
+  margin: 80px 0;
 }
