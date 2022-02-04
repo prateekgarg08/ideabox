@@ -4,6 +4,8 @@
   --bs-primary: #fab700;
   --bs-primary-rgb: 250, 183, 0;
   --bs-gray-dark: #4d4d4d;
+  --bs-dark-blue: #333c6c;
+  --bs-dark-blue-rgb: 51, 60, 108;
 }
 
 .text-gray-dark {
@@ -78,4 +80,9 @@ footer {
 .footer-header h4 {
   font-size: 26px;
   margin-left: 5px;
+}
+
+.nav-link {
+  color: var(--bs-dark-blue) !important;
+  text-decoration: underline;
 }
