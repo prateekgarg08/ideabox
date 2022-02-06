@@ -45,9 +45,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-content {
-  /* color: #4d4d4d; */
-}
+
 .hero-wrapper h1 {
   font-size: 38px;
   font-weight: 700;
@@ -91,7 +89,9 @@ footer {
 
 .nav-link {
   color: var(--bs-dark-blue) !important;
-  text-decoration: underline;
+}
+.nav-link:hover {
+  text-decoration: underline !important;
 }
 .section-graphic img {
   width: 510px;
