@@ -31,6 +31,11 @@
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
 }
+
+.nav-link {
+  text-decoration: none !important;
+}
+
 .hero-section {
   /* width: 100%; */
   /* height: 500px; */
@@ -133,6 +138,19 @@ footer {
 .row-wrapper > * {
   margin: 80px 0;
 }
+
+.clients-image {
+  width: 120px !important;
+}
+.person-image-wrapper {
+  width: 100%;
+}
+.person-image {
+  border-radius: 50%;
+  width: 50px !important;
+  /* height: 50px; */
+}
+
 #request-callback {
   background-color: var(--bs-gray-dark);
   color: white;
@@ -157,6 +175,7 @@ footer {
   justify-content: end;
   padding: 20px 10px;
 }
+
 .input-element label {
   margin-bottom: 10px;
   font-weight: bold;
@@ -173,4 +192,84 @@ footer {
   color: #333c6c;
   border: none;
   font-weight: bold;
+}
+/*CONTACT US*/
+
+.underline-title {
+  text-align: center;
+  line-height: 60px;
+}
+.underline-title::after {
+  /* margin-top: 20px; */
+  content: "";
+  display: block;
+  margin: auto;
+  width: 35px;
+  height: 5px;
+  background-color: var(--bs-primary);
+  border-radius: 3px;
+}
+
+.info-wrapper {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-wrapper > * {
+  margin: 0;
+}
+.details {
+  background: var(--bs-primary);
+  color: white;
+  height: 100%;
+  padding: 20px;
+}
+.details-item {
+  list-style: none;
+}
+.details-item a {
+  color: white;
+  /* text-decoration: none; */
+}
+.details-item i {
+  font-size: 24px;
+  /* color: var(--bs-dark-blue); */
+  margin-right: 10px;
+}
+.our-contact {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+.persons {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-person {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+.person-details {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.person-details p {
+  margin-bottom: 0;
+}
+.p-head h3 {
+  margin-bottom: 0px;
 }
