@@ -51,7 +51,35 @@
         </div>
       </div>
     </header> -->
+    <header>
+      <div class="container">
+        <div class="text-center">
+          <div class="header-wrapper ">
+            <div class="header-item">
+              <i class="fa fa-phone mx-1"></i> 
+              
+              +91 9509040723
+            </div>
+            <div class="header-item">
+              
+              hello@ideaboxtechnology.com
+            </div>
+            <div class="header-item">
+              
+              <i class="fa fa-map-marker mx-1"></i>
+              
+              <div id="address" class="header-text">
 
+              </div>
+            </div>
+            <select name="office" id="office">
+              <option value="udaipur" selected>Udaipur</option>
+              <option value="jaipur">Jaipur</option>
+            </select>
+          </div>
+      </div>
+      </div>
+    </header>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
@@ -65,8 +93,33 @@
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Home</a>
             </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                About Us
+              </a>
+              <ul class="dropdown-menu megamenu" aria-labelledby="navbarDropdown">
+                <div class="row">
+                  <div class="col-lg-3"><h1>Hello</h1></div>
+                  <div class="col-lg-3"><h1>Hello</h1></div>
+                  <div class="col-lg-3"><h1>Hello</h1></div>
+                  <div class="col-lg-3"><h1>Hello</h1></div>
+                </div>
+                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
+              <a class="nav-link" href="./contact.html">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Hire Us</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="./contact.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./contact.html">Contact Us</a>
@@ -108,7 +161,7 @@
           </div>
           <div class="col-lg-5 col-md-6">
             <div class="section-graphic">
-              <img src="./images/What-are-you-waiting-for-Contact-US.png" alt="">
+              <img src="./images/happy cream.jpg" alt="">
             </div>
           </div>
         </div>
@@ -518,7 +571,22 @@
         }
     }
     })
-    
+
+
+    if(document.getElementById("office").value=="udaipur"){
+      document.getElementById("address").innerText = "Udaipur Address";
+    }
+    else if(document.getElementById("office").value=="jaipur"){
+      document.getElementById("address").innerText = "Jaipur Address";
+    }
+    document.getElementById("office").addEventListener("change",()=>{
+      if(document.getElementById("office").value=="udaipur"){
+      document.getElementById("address").innerText = "Udaipur Address";
+    }
+    else if(document.getElementById("office").value=="jaipur"){
+      document.getElementById("address").innerText = "Jaipur Address";
+    }
+    })
     </script>
   </body>
 </html>
