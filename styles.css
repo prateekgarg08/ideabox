@@ -33,10 +33,11 @@
 }
 header {
   background: #333c6c;
+  color: #fff;
 }
 .header-item {
   display: flex;
-  margin: 20px;
+  margin: 20px 0;
 }
 .header-item i {
   color: #fabc4d;
@@ -46,12 +47,13 @@ header {
   justify-content: center;
   color: white;
 }
-.header-wrapper select {
+#office {
   background-color: #fabc4d;
   color: #333c6c;
-}
-.header-item select option {
   padding: 20px;
+  margin: 0;
+}
+#office option {
 }
 .nav-link {
   text-decoration: none !important;
