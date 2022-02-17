@@ -63,7 +63,7 @@
       <div class="container">
         <div class="location-wrapper">
 
-          <div class="location active" data-loc="udaipur">Udaipur</div>
+          <div class="location loc-active" data-loc="udaipur">Udaipur</div>
           <div class="location" data-loc="jaipur">Jaipur</div>
         </div>
       </div>
@@ -291,7 +291,7 @@
       </div>
     </footer>
     <script>
-      let active = document.querySelector(".active");
+      let active = document.querySelector(".loc-active");
       let loc = active.dataset.loc;
 
       const fun = ()=>{
@@ -311,8 +311,8 @@
       locs.forEach((any)=>{
         any.addEventListener("click",()=>{
 
-        active.classList.remove("active")
-        any.classList.add("active");
+        active.classList.remove("loc-active")
+        any.classList.add("loc-active");
         active =any;
         loc = active.dataset.loc;
         

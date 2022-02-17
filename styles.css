@@ -278,7 +278,7 @@ footer a {
 .location {
   padding: 20px;
 }
-.active {
+.loc-active {
   background-color: var(--bs-yellow);
   color: var(--bs-dark-blue);
 }
